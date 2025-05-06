@@ -91,13 +91,7 @@
     font-style: normal;
     line-height: 1.35;
   }
-  .address a {
-    text-decoration: none;
-    border-bottom: 1px solid currentColor;
-  }
-  .address p {
-    margin: 0;
-  }
+
   
   /* Обложка (cover) */
   
@@ -118,27 +112,18 @@
     gap: 20px;
     font-weight: 700;
     font-size: 100px;
-    line-height: 1;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    margin-bottom: 135px;
+    margin-bottom: 106px;
   }
   .aligned-text {
     display: block;
   }
   .aligned-text_center {
     text-align: center;
-    margin-left: 60px;
   }
   .aligned-text_right {
     text-align: right;
-    margin-left: 30px;
-  }
-  .letter-spacing-extended {
-    letter-spacing: 0.6em;
-  }
-  .no-letter-spacing {
-    letter-spacing: 0;
   }
   
   /* Блок с описанием и кнопкой */
@@ -228,14 +213,7 @@
     background-size: cover;
     background-position: center;
   }
-  /* Оверлей для карточек */
-  .card.overlay::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: -1;
-  }
+
   /* Контент карточек */
   .card__title {
     font-size: 22px;

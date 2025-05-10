@@ -97,6 +97,10 @@
     text-align: right;
     margin-bottom: 0;
   }
+
+  .no-letter-spacing {
+    letter-spacing: 0;
+  }
   
   /* Блок с описанием и кнопкой */
   .cover__description {
@@ -160,7 +164,7 @@
   .lots__card-list-item {
     list-style: none;
     width: 334px;
-    height: 596px;
+    min-height: 596px;
   }
   
   .card-link {
@@ -252,6 +256,7 @@
     height: 240px;
     border-radius: 150px;
     background-color: #000;
+    margin: 35px 47px 0 47px;
   }
 
   .about__logo-image {
@@ -262,7 +267,6 @@
   /* Текстовый блок */
   .about__title {
     align-content: center;
-    margin-top: 101px;
     margin-bottom: 100px;
     font-style: normal;
     font-weight: 700;
@@ -295,7 +299,6 @@
     justify-self: start;
     max-width: 240px;
     font-style: normal;
-    line-height: 1.35;
   }
 
   .footer .address a {
@@ -339,7 +342,6 @@
   }
 
   .footer__social-icon {
-    width: 48px;
-    height: 48px;
+    max-width: 48px;
   }
   

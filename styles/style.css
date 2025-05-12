@@ -28,7 +28,7 @@
 
   .header__links-list {
     display: flex;
-    gap: 30px;
+    gap: 32px;
     font-size: 18px;
     line-height: 21px;
   }
@@ -49,8 +49,8 @@
   /* Логотип */
   .header__logo {
     display: block;
-    width: 148px;
-    height: 105px;
+    width: 135px;
+    height: 110px;
   }
   
   /* Адрес */
@@ -60,7 +60,7 @@
     font-weight: 400;
     line-height: 24px;
     justify-self: end;
-    max-width: 240px;
+    padding-right: 37px;
   }
 
   
@@ -123,8 +123,8 @@
 
   .bet-button {
     box-sizing: border-box;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid currentColor;
+    color: inherit;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
@@ -155,16 +155,20 @@
   /* Список карточек */
   .lots__card-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style: none;
     flex-wrap: wrap;
     gap: 25px;
+    margin: 0;
+    padding: 0;
   }
   
   .lots__card-list-item {
     list-style: none;
     width: 334px;
     min-height: 596px;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
   
   .card-link {
@@ -182,24 +186,20 @@
     height: 100%;
     color: #fff;
     z-index: 0;
+    background-size: cover;
+    background-position: center;
   }
 
   .card_type_film {
     background-image: url("../images/card-lot-01.jpg");
-    background-size: cover;
-    background-position: center;
   }
 
   .card_type_book {
     background-image: url("../images/card-lot-02.jpg");
-    background-size: cover;
-    background-position: center;
   }
 
   .card_type_picture {
     background-image: url("../images/card-lot-03.jpg");
-    background-size: cover;
-    background-position: center;
   }
 
   /* Контент карточек */
@@ -297,8 +297,10 @@
   /* Адрес */
   .footer .address {
     justify-self: start;
-    max-width: 240px;
+    /*max-width: 240px;*/
     font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .footer .address a {
@@ -308,6 +310,7 @@
 
   .footer .address p {
     margin: 0;
+    white-space: nowrap;
   }
 
   /* Меню */
@@ -319,10 +322,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .footer__menu-link {
@@ -331,6 +335,7 @@
 
   .footer__menu-link_active {
     text-decoration: none;
+    text-transform: lowercase;
   }
 
   /* Соцсети */

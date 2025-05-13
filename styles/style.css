@@ -155,7 +155,7 @@
   /* Список карточек */
   .lots__card-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
     flex-wrap: wrap;
     gap: 25px;
